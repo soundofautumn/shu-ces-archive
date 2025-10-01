@@ -1,0 +1,6 @@
+[submodule "计算机图形学/RenderEngine"]
+	path = 计算机图形学/RenderEngine
+	url = https://github.com/soundofautumn/RenderEngine
+[submodule "信号处理/lab"]
+	path = 信号处理/lab
+	url = https://github.com/soundofautumn/SHU-SingnalProcessing

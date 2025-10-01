@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1627280773 source:c:\users\qli\desktop\面向对象程序设计a(08305138)\实验01\c-string\c-string\c-string.cpp
+	"C-String.h"
+	<cstring>
+
+1627280723 c:\users\qli\desktop\面向对象程序设计a(08305138)\实验01\c-string\c-string\c-string.h
+
+1627288872 source:c:\users\qli\desktop\面向对象程序设计a(08305138)\实验01\c-string\c-string\sortstrings.cpp
+	"SortStrings.h"
+	<cstring>
+
+1627278609 c:\users\qli\desktop\面向对象程序设计a(08305138)\实验01\c-string\c-string\sortstrings.h
+	<iostream>
+

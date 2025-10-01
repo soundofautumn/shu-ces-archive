@@ -1,0 +1,40 @@
+# Project: LinkList
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = ./Dev_Debug/AddressBook.o ./Dev_Debug/Banking.o ./Dev_Debug/BankingTest.o ./Dev_Debug/Main.o ./Dev_Debug/Test.o
+LINKOBJ  = ./Dev_Debug/AddressBook.o ./Dev_Debug/Banking.o ./Dev_Debug/BankingTest.o ./Dev_Debug/Main.o ./Dev_Debug/Test.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Dev_Debug/LinkList.exe
+CXXFLAGS = $(CXXINCS) -fpermissive -fpermissive
+CFLAGS   = $(INCS) -fpermissive
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+./Dev_Debug/AddressBook.o: AddressBook.cpp
+	$(CPP) -c AddressBook.cpp -o ./Dev_Debug/AddressBook.o $(CXXFLAGS)
+
+./Dev_Debug/Banking.o: Banking.cpp
+	$(CPP) -c Banking.cpp -o ./Dev_Debug/Banking.o $(CXXFLAGS)
+
+./Dev_Debug/BankingTest.o: BankingTest.cpp
+	$(CPP) -c BankingTest.cpp -o ./Dev_Debug/BankingTest.o $(CXXFLAGS)
+
+./Dev_Debug/Main.o: Main.cpp
+	$(CPP) -c Main.cpp -o ./Dev_Debug/Main.o $(CXXFLAGS)
+
+./Dev_Debug/Test.o: Test.cpp
+	$(CPP) -c Test.cpp -o ./Dev_Debug/Test.o $(CXXFLAGS)

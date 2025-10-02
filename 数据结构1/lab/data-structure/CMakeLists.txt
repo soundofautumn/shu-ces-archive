@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.26)
+
+project(data-structure)
+
+add_subdirectory(lab0)
+add_subdirectory(lab1)
+add_subdirectory(lab1-1)
+add_subdirectory(lab-pre-1)
+add_subdirectory(lab2)
+add_subdirectory(lab2-1)
+#add_subdirectory(lab-pre-2)
+add_subdirectory(lab3-1)
+add_subdirectory(lab3-2)
+add_subdirectory(lab3-3)
+add_subdirectory(lab4-1)
+add_subdirectory(lab4-2)
+add_subdirectory(lab-pre-3)

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraphView</class>
+ <widget class="QWidget" name="GraphView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GraphView</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>readFromFile()</slot>
+  <slot>minimumSpanningTree()</slot>
+  <slot>shortestPath()</slot>
+ </slots>
+</ui>
